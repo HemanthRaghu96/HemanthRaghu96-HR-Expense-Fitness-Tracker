@@ -1,8 +1,11 @@
+import LoginComp from '@/components/login/LoginComp'
 import React from 'react'
 
 const LoginPage = () => {
   return (
-    <div>LoginPage</div>
+   <>
+   <LoginComp />
+   </>
   )
 }
 

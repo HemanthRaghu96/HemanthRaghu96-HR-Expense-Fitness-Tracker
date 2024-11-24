@@ -1,13 +1,23 @@
+'use client'
 import Link from "next/link";
 import React from "react";
-import { IoEyeOutline } from "react-icons/io5";
+import { IoArrowBack, IoEyeOutline } from "react-icons/io5";
 import Button from "../button/Button";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 const SignUpComp = () => {
+  const router = useRouter();
+
+  const handleBack=()=>{
+    router.back();
+  }
   return (
     <>
       <div className="flex flex-col justify-center items-center mt-[50px]">
-        <h1 className="text-2xl font-bold">Sign up</h1>
+      <div className="flex justify-start items-center w-[300px]">
+       <IoArrowBack className="size-6" onClick={handleBack}/>
+       <h1 className="text-2xl font-bold pl-[100px]">Sign Up</h1>
+       </div>
         <input
           type="text"
           placeholder="Name"
