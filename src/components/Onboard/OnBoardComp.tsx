@@ -28,11 +28,11 @@ const OnBoardComp = () => {
         </div>
         <div className="mt-2">
           <Link href={"/signup"}>
-            <Button name="Sign Up" color="white" bgColor="violet-700" />
+            <Button name="Sign Up" className="text-white bg-violet-700" />
           </Link>
           <Link href={"/login"}>
             {" "}
-            <Button name="Login" color="violet-700" bgColor="violet-100" />
+            <Button name="Login" className="text-violet-700 bg-violet-100"  />
           </Link>
         </div>
       </div>
